@@ -1,0 +1,31 @@
+name:                Comments
+version:             0.0.1
+synopsis:            An article + comments backend
+license:             MIT
+author:              Daniel Wilson
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.8
+
+executable comments
+  main-is:             Main.hs
+  -- other-modules:       
+  build-depends:       base ==4.6.*
+                     , wai
+                     , warp
+                     , http-types
+                     , containers
+                     , resourcet
+                     , scotty
+                     , text
+                     , bytestring
+                     , acid-state
+                     , monad-logger
+                     , heroku
+                     , transformers
+                     , wai-middleware-static
+                     , wai-extra
+                     , time
+                     , safecopy
+                     , mtl
+                     , aeson
